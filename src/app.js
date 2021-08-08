@@ -1,4 +1,4 @@
 require('./index.html');
 import 'normalize.css';
-import './scss/base.scss';
-import './scss/header.scss';
+import './scss/base/resets.scss';
+import './scss/globals/header.scss';

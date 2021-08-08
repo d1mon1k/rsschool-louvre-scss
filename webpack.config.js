@@ -32,7 +32,7 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: './src/scss/vars.scss',
+              resources: './src/scss/config/variables.scss',
             }
           }
         ]
