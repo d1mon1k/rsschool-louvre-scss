@@ -1,4 +1,10 @@
-require('./index.html');
+require('../index.html');
+
 import 'normalize.css';
-import './scss/base/resets.scss';
-import './scss/globals/header.scss';
+
+//Base
+import './scss/base/_base.scss';
+import './scss/base/_resets.scss';
+
+//Layout
+import './scss/layout/_header.scss';

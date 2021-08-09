@@ -32,21 +32,29 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: './src/scss/config/variables.scss',
+              resources: './src/scss/abstracts/_variables.scss',
             }
           }
         ]
       },
       {
         test: /\.html$/,
-        loader: "raw-loader"
-      }
+        loader: 'html-loader'
+      },
+      {
+        test: /\.svg/,
+        type: 'asset/resource'
+      },
+      // {
+      //   test: /\.(png|jpg|jpeg|gif|svg)$/,
+      //   loader: 'file-loader'
+      // }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
-      template: path.resolve(__dirname, './src/index.html'), // шаблон
+      template: path.resolve(__dirname, 'index.html'), // шаблон
       filename: 'index.html', // название выходного файла
     }),
     new CleanWebpackPlugin(),
