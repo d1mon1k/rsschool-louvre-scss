@@ -1,16 +1,13 @@
 .header {
   padding: 65px 0;
   color: #fff;
-  background-color: $bg-dark-color;
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__nav {
-  }
-  &__logo {
-  }
+  background-color: $color-bg;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -51,7 +48,7 @@
 
   &__link {
     &:hover {
-      color: $font-gold-color;
+      color: $color-title;
     }
   }
 }

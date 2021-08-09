@@ -1,13 +1,31 @@
-body,
 html {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 300;
   color: #000;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1465px;
+body {
+}
+
+h1 {
+  font-family: "Forum", cursive;
+  @include font(80px, 90px, normal, normal);
+}
+
+h2 {
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+}
+
+h3 {
+  font-family: "Forum", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
 }

@@ -15,6 +15,7 @@ module.exports = {
     compress: true,
     hot: true,
     port: 8080,
+    noInfo: true,
   },
   output: {
     path: path.resolve(__dirname, 'dist'), //__dirname - Это абсолютный путь к нашему js файлу в каталоге. path.resolve([путь]) - используется для преобразования последовательности сегментов в абсолютный путь => текущий путь к repo/dist/bundle.js
@@ -32,7 +33,10 @@ module.exports = {
           {
             loader: 'sass-resources-loader',
             options: {
-              resources: './src/scss/abstracts/_variables.scss',
+              resources: [
+                './src/scss/abstracts/_variables.scss',
+                './src/scss/abstracts/_mixins.scss'
+              ]
             }
           }
         ]
