@@ -1,31 +1,29 @@
 html {
+  font-size: 10px;
+}
+
+body {
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 300;
   color: #000;
 }
 
-body {
-}
-
 h1 {
-  font-family: "Forum", cursive;
-  @include font(80px, 90px, normal, normal);
+  @include font($size: 8rem, $height: 9rem, $weight: 300);
+  @extend %font-add;
+  color: $color-light;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Forum", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 80px;
-  line-height: 90px;
+  @include font(8rem, 9rem);
+  @extend %font-add;
 }
 
 h3 {
-  font-family: "Forum", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 35px;
+  @include font(3.2rem, 3.5rem);
+  @extend %font-add;
   letter-spacing: 5px;
 }

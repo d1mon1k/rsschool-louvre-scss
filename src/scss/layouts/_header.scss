@@ -1,5 +1,5 @@
 .header {
-  padding: 65px 0;
+  padding: 82px 0;
   color: #fff;
   background-color: $color-bg;
 }
@@ -8,47 +8,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.logo {
-  &__icon {
-    display: inline-block;
-    margin-right: 12px;
-    width: 100%;
-    width: 49px;
-    height: 26px;
-    background-image: url("../../../assets/logo.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &__text {
-    font-family: Forum;
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-  }
-}
-
-.menu {
-  max-width: 756px;
-  width: 100%;
-  font-weight: 200;
-  letter-spacing: 2px;
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item {
-  }
-
-  &__link {
-    &:hover {
-      color: $color-title;
-    }
-  }
 }

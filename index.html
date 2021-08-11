@@ -33,10 +33,11 @@
   </header>
   <!-- /.header -->
   <main class="main">
-    <section class="welcome" style="background-image: url('assets/img/welcome-bg.jpg')">
+    <section class="welcome">
+      <div class="welcome__background"></div>
       <div class="wrapper">
         <div class="welcome__column">
-          <h1 class="welcome__title title">Welcome to the louvre</h1>
+          <h1 class="welcome__title title_dash">Welcome <br> to the louvre</h1>
           <p class="welcome__article">From the castle to the museum</p>
           <a href="#" class="welcome__btn btn">Discover the Louvre</a>
         </div>
@@ -45,55 +46,67 @@
     <!-- /.welcome -->
     <section class="visiting">
       <div class="wrapper">
-        <h2 class="visiting__title title">Virtual tour</h2>
+        <h2 class="visiting__title title_dash">Virtual tour</h2>
         <div class="visiting__tours">
           <ul class="visiting__list tours-list">
             <li class="tours-list__item">
               <a href="#" class="tours-list__link">
-                <img src="assets/img/tours/palace.jpg" alt="Royal palace">
-                <h3 class="tours__title title">Royal Palace</h3>
-                <p class="tours__article">360° Virtual Tour</p>
-                <p class="tours__article">Google Street Panorama View</p>
+                <div class="tours-list__img">
+                  <img src="assets/img/tours/palace.jpg" alt="Royal palace">
+                </div>
+                <h3 class="tours-list__title">Royal Palace</h3>
+                <p class="tours-list__article">360° Virtual Tour</p>
+                <p class="tours-list__article tours-list__article_s">Google Street Panorama View</p>
               </a>
             </li>
             <li class="tours-list__item">
               <a href="#" class="tours-list__link">
-                <img src="assets/img/tours/wing.jpg" alt="Denon Wing">
-                <h3 class="tours__title title">Denon Wing</h3>
-                <p class="tours__article">360° Virtual Tour</p>
-                <p class="tours__article">Google Street Panorama View</p>
+                <div class="tours-list__img">
+                  <img src="assets/img/tours/wing.jpg" alt="Denon Wing">
+                </div>
+                <h3 class="tours-list__title">Denon Wing</h3>
+                <p class="tours-list__article">360° Virtual Tour</p>
+                <p class="tours-list__article tours-list__article_s">Google Street Panorama View</p>
               </a>
             </li>
             <li class="tours-list__item">
               <a href="#" class="tours-list__link">
-                <img src="assets/img/tours/perrault.jpg" alt="Colonnade Perrault">
-                <h3 class="tours__title title">Colonnade Perrault</h3>
-                <p class="tours__article">360° Virtual Tour</p>
-                <p class="tours__article">Google Street Panorama View</p>
+                <div class="tours-list__img">
+                  <img src="assets/img/tours/perrault.jpg" alt="Colonnade Perrault">
+                </div>
+                <h3 class="tours-list__title">Colonnade Perrault</h3>
+                <p class="tours-list__article">360° Virtual Tour</p>
+                <p class="tours-list__article tours-list__article_s">Google Street Panorama View</p>
               </a>
             </li>
             <li class="tours-list__item">
               <a href="#" class="tours-list__link">
-                <img src="assets/img/tours/greek-hall.jpg" alt="Greek hall">
-                <h3 class="tours__title title">Greek hall</h3>
-                <p class="tours__article">360° Virtual Tour</p>
-                <p class="tours__article">Google Street Panorama View</p>
+                <div class="tours-list__img">
+                  <img src="assets/img/tours/greek-hall.jpg" alt="Greek hall">
+                </div>
+                <h3 class="tours-list__title">Greek hall</h3>
+                <p class="tours-list__article">360° Virtual Tour</p>
+                <p class="tours-list__article tours-list__article_s">Google Street Panorama View</p>
               </a>
             </li>
             <li class="tours-list__item">
               <a href="#" class="tours-list__link">
-                <img src="assets/img/tours/mona-lisa.jpg" alt="Mona Lisa">
-                <h3 class="tours__title title">Mona Lisa</h3>
-                <p class="tours__article">360° Virtual Tour</p>
-                <p class="tours__article">Google Street Panorama View</p>
+                <div class="tours-list__img">
+                  <img src="assets/img/tours/mona-lisa.jpg" alt="Mona Lisa">
+                </div>
+                <h3 class="tours-list__title">Mona Lisa</h3>
+                <p class="tours-list__article">360° Virtual Tour</p>
+                <p class="tours-list__article tours-list__article_s">Google Street Panorama View</p>
               </a>
             </li>
             <li class="tours-list__item">
               <a href="#" class="tours-list__link">
-                <img src="assets/img/tours/night-palace.jpg" alt="Night Palace">
-                <h3 class="tours__title title">Night Palace</h3>
-                <p class="tours__article">360° Virtual Tour</p>
-                <p class="tours__article">Google Street Panorama View</p>
+                <div class="tours-list__img">
+                  <img src="assets/img/tours/night-palace.jpg" alt="Night Palace">
+                </div>
+                <h3 class="tours-list__title">Night Palace</h3>
+                <p class="tours-list__article">360° Virtual Tour</p>
+                <p class="tours-list__article tours-list__article_s">Google Street Panorama View</p>
               </a>
             </li>
           </ul>
@@ -102,22 +115,23 @@
     </section>
     <!-- /.visiting -->
     <section class="explore">
-      <div class="wrapper">
-        <div class="explore-row">
-          <div class="explore__content">
-            <h2 class="explore__title title">Picture explore</h2>
-            <p class="explore__article article">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
-              the
-              Spanish Golden Age.</p>
-            <p class="explore__article">It was cleaned in 1984 to remove a <span class="explore__span">"yellow
-                veil"</span> of dust that had
-              gathered since
-              the previous restoration in the 19th century.</p>
-            <p class="explore__article">The cleaning provoked furious protests, not because the picture had been damaged
-              in any way, but because it looked different.</p>
-          </div>
-          <div class="explore__img" style="background-image: url('assets/img/explore-bg.jpg')"></div>
+      <div class="wrapper explore__wrapper">
+        <div class="explore__content">
+          <h2 class="explore__title title_dash">Picture explore</h2>
+          <p class="explore__article article">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
+            the
+            Spanish Golden Age.</p>
+          <p class="explore__article">It was cleaned in 1984 to remove a <span class="explore__span">"yellow
+              veil"</span> of dust that had
+            gathered since
+            the previous restoration in the 19th century.</p>
+          <p class="explore__article">The cleaning provoked furious protests, not because the picture had been damaged
+            in any way, but because it looked different.</p>
         </div>
+        <div class="explore__img-block">
+          <div class="explore__img"></div>
+        </div>
+      </div>
       </div>
     </section>
     <!-- /.explore -->
@@ -131,7 +145,7 @@
           </div>
         </div>
         <div class="video__content">
-          <h2 class="video__title title">Video journey</h2>
+          <h2 class="video__title">Video journey</h2>
           <p class="video__article">Enter and visit one of the most famous museums in the world and enjoy masterpieces
             such as Mona Lisa or Hammurabi's Code</p>
         </div>
@@ -139,12 +153,12 @@
     </section>
     <!-- /.video -->
     <section class="tickets">
-      <h2 class="tickets__title title">Buy tickets</h2>
+      <h2 class="tickets__title title_dash">Buy tickets</h2>
       <div class="tickets__row">
         <div class="tickets__img" style="background-image: url('assets/img/tickets-bg.jpg')"></div>
         <div class="tickets__booking-tickets">
           <div class="tickets__type-ticket">
-            <h3 class="tickets__title">Ticket type</h3>
+            <h3 class="tickets__subtitle">Ticket type</h3>
             <div class="tickets__column">
               <input id="ticket-type1" type="radio" value="Permanent exhibition" name="tickets-type">
               <label for="ticket-type1">Permanent exhibition</label>
@@ -155,7 +169,7 @@
             </div>
           </div>
           <div class="tickets__amount">
-            <h3 class="tickets__title">Amount</h3>
+            <h3 class="tickets__subtitle">Amount</h3>
             <div class="tickets__column">
               <button class="tickets__button" type="button">-</button>
               <input id="amount-basic" type="number">
@@ -175,10 +189,10 @@
     <!-- /.tickets -->
     <section class="contacts">
       <div class="wrapper">
-        <h2 class="contacts__title title">Contacts</h2>
+        <h2 class="contacts__title title_dash">Contacts</h2>
         <div class="contacts__content">
-          <h3 class="contacts__title">Palais Royal</h3>
-          <h3 class="contacts__title">Musee du Louvre</h3>
+          <h3 class="contacts__subtitle">Palais Royal</h3>
+          <h3 class="contacts__subtitle">Musee du Louvre</h3>
           <span class="contacts__info">address: 75001 Paris, France</span>
           <span class="contacts__info">phone: +33(0) 1 40 20 50 50</span>
           <span class="contacts__info">mail: info@louvre.fr</span>

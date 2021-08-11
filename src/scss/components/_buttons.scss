@@ -1,9 +1,8 @@
 .btn {
-  padding: 24px 85px;
+  @include font(2.2rem, 2.6rem, 200, normal);
+  padding: 24px 67px;
   border-radius: 10px;
-  font-weight: 200;
-  font-size: 22px;
-  line-height: 26px;
+  letter-spacing: 2px;
   color: $color-light;
-  background-color: $color-button;
+  background-color: $color-additional;
 }

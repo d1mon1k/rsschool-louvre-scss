@@ -1,0 +1,20 @@
+.menu {
+  max-width: 719px;
+  width: 100%;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+}
+
+.menu__link {
+  &:hover {
+    color: $color-title;
+  }
+}
