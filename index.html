@@ -138,10 +138,24 @@
     <section class="video">
       <!-- TODO доработать плеер -->
       <div class="wrapper">
-        <div class="video__video-player" style="background-image: url('assets/img/video-bg.jpg')">
-          <div class="video__bar bar">
+        <div class="video__video-player video-player">
+          <div class="video-player__video-container">
+            <div class="video-player__preview">
+            </div>
+            <div class="video-player__btn"></div>
+          </div>
+          <div class="video-player__bar bar">
+            <div class="bar__play-stop">
+              <div class="bar__rewind-back"></div>
+              <div class="play"></div>
+              <div class="bar__rewind-forward"></div>
+            </div>
             <input type="range" class="bar__progress">
-            <input type="range" class="bar__volume">
+            <div class="bar__full-screen">
+              <div class="bar__micro"></div>
+              <input type="range" class="bar__volume">
+              <div class="bar__full"></div>
+            </div>
           </div>
         </div>
         <div class="video__content">

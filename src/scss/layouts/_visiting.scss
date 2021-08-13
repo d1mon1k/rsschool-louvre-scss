@@ -35,7 +35,6 @@
 
 .tours-list__link {
   &:hover > .tours-list__title::after {
-    @extend %transition;
     width: 100%;
   }
 }
@@ -66,6 +65,7 @@
     width: 68%;
     height: 2px;
     background-color: $color-additional;
+    @extend %transition;
   }
 }
 
