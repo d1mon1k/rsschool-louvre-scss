@@ -1,0 +1,98 @@
+//TODO CHANGE BEM
+.tickets__booking-tickets {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 50px;
+  color: $color-light;
+}
+
+.tickets__type-ticket {
+  margin: 0 180px 0 0;
+}
+
+.tickets__subtitle {
+  margin: 0 0 25px 0;
+  @include font(2.5rem, 3.1rem, bold);
+  letter-spacing: 2px;
+}
+
+.tickets__subtitle_r {
+  text-align: right;
+}
+
+.tickets__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets__item {
+  margin: 25px 0;
+}
+
+.tickets__amount {
+}
+
+.tickets__column-amount {
+}
+
+.tickets__item-amount {
+  display: block;
+  margin: 0 0 25px 0;
+}
+
+.tickets__label {
+  display: inline-block;
+  padding: 0 0 10px 0;
+}
+
+.tickets__btn-group {
+  display: flex;
+  height: 50px;
+}
+
+.tickets__button {
+  width: 46px;
+  border-top: 1px solid $color-light;
+  border-bottom: 1px solid $color-light;
+  border-right: none;
+  border-left: none;
+  color: $color-light;
+  font-size: 2.8rem;
+  background-color: $color-bg;
+  outline: none;
+}
+
+.tickets__button_l {
+  border-left: 1px solid $color-light;
+}
+
+.tickets__button_r {
+  border-right: 1px solid $color-light;
+}
+
+.tickets__area {
+  max-width: 58px;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid $color-light;
+  border-bottom: 1px solid $color-light;
+  color: $color-light;
+  background-color: $color-bg;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+.tickets__total {
+  margin: 0 0 50px 0;
+  @include font(2.5rem, 3.1rem, bold);
+  letter-spacing: 1.65px;
+}
+
+.tickets__btn {
+  padding: 10px 35px;
+  border-radius: 2px;
+  color: #000;
+  background-color: $color-light;
+}

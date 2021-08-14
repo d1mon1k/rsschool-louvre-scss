@@ -1,3 +1,15 @@
+.tours-list__title::after {
+  transition: all 0.5s ease-out;
+}
+
+.welcome__article {
+  font-family: "Roboto", sans-serif;
+}
+
+h3, h2, h1 {
+  font-family: "Forum", cursive;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,18 +349,6 @@ template {
   display: none;
 }
 
-.tours-list__title::after {
-  transition: all 0.5s ease-out;
-}
-
-.welcome__article {
-  font-family: "Roboto", sans-serif;
-}
-
-.visiting__title, h3, h2, h1 {
-  font-family: "Forum", cursive;
-}
-
 *,
 *::before,
 *::after {
@@ -409,6 +409,9 @@ h2 {
   line-height: 9rem;
   font-weight: normal;
   font-style: normal;
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -437,31 +440,56 @@ h3 {
   align-items: center;
 }
 
+.welcome {
+  position: relative;
+  background-color: #030303;
+}
+
+.welcome__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  max-width: 1215px;
+  max-height: 760px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/welcome-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.welcome__column {
+  position: relative;
+  z-index: 1;
+  max-width: 598px;
+  padding: 115px 0 270px 0;
+}
+
+.welcome__title {
+  margin: 0 0 26px 0;
+}
+
+.welcome__article {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 0 102px 0;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
 .visiting {
   padding: 75px 0;
 }
 
-.title_dash::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #710707;
-}
-
 .visiting__title {
-  font-size: 8rem;
-  line-height: 9rem;
-  font-weight: normal;
-  font-style: normal;
   position: relative;
   padding: 0 0 28px 0;
   margin: 0 0 75px 0;
   color: #9d8665;
-  letter-spacing: 5px;
-  text-transform: uppercase;
 }
 
 .tours-list {
@@ -515,84 +543,53 @@ h3 {
   margin: 0;
 }
 
-.logo__icon {
-  display: inline-block;
-  margin-right: 15px;
-  width: 49px;
-  height: 26px;
-  background-image: url("../../assets/logo.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.logo__text {
-  font-family: Forum;
-  font-weight: 400;
-  font-size: 2.8rem;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.menu {
-  max-width: 719px;
-  width: 100%;
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-
-.menu__list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__link:hover {
-  color: #9d8665;
-}
-
-.welcome {
-  position: relative;
+.explore {
+  padding: 89px 0;
   background-color: #030303;
 }
 
-.welcome__background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  max-width: 1215px;
-  max-height: 760px;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../assets/img/welcome-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
+.explore__wrapper {
+  display: flex;
+  align-items: top;
 }
 
-.welcome__column {
+.explore__content {
+  flex: 1 1 50%;
+  padding-right: 61px;
+}
+
+.explore__title {
   position: relative;
-  z-index: 1;
-  max-width: 598px;
-  padding: 115px 0 270px 0;
+  padding: 0 0 26px 0;
+  margin: -14px 0 77px 0;
 }
 
-.welcome__title {
+.explore__article {
+  color: #fff;
+  line-height: 3.8rem;
   margin: 0 0 26px 0;
 }
 
-.welcome__article {
-  font-size: 2.8rem;
-  line-height: 3.3rem;
-  font-weight: 300;
-  font-style: normal;
-  margin: 0 0 102px 0;
-  letter-spacing: 2px;
-  color: #fff;
+.explore__img-block {
+  position: relative;
+  padding: 0 0 47.5% 0;
+  flex: 1 1 50%;
+}
+
+.explore__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/explore-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video {
-  padding: 95px 0 75px;
+  padding: 92px 0 75px;
 }
 
 .video__video-player {
@@ -646,6 +643,84 @@ h3 {
   flex: 1 1 50%;
   margin: 0;
   line-height: 3.8rem;
+}
+
+.tickets {
+  padding: 75px 0;
+  background-color: #030303;
+}
+
+.tickets__title {
+  position: relative;
+}
+
+.tickets__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets__img-container {
+  position: relative;
+  max-width: 720px;
+  flex: 1 1 100%;
+  padding: 0 0 38% 0;
+}
+
+.tickets__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/img/tickets-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logo__icon {
+  display: inline-block;
+  margin-right: 15px;
+  width: 49px;
+  height: 26px;
+  background-image: url("../../assets/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo__text {
+  font-family: Forum;
+  font-weight: 400;
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.menu {
+  max-width: 719px;
+  width: 100%;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__link:hover {
+  color: #9d8665;
+}
+
+.title_underscore::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #710707;
 }
 
 .bar {
@@ -727,55 +802,6 @@ h3 {
   background-position: center;
 }
 
-.explore {
-  padding: 89px 0;
-  background-color: #030303;
-}
-
-.explore__wrapper {
-  display: flex;
-  align-items: top;
-}
-
-.explore__content {
-  flex: 1 1 50%;
-  padding-right: 61px;
-}
-
-.explore__title {
-  position: relative;
-  padding: 0 0 42px 0;
-  margin: 0 0 77px 0;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  line-height: 6rem;
-  color: #fff;
-}
-
-.explore__article {
-  color: #fff;
-  line-height: 3.8rem;
-  margin: 0 0 26px 0;
-}
-
-.explore__img-block {
-  position: relative;
-  padding: 0 0 47.3% 0;
-  flex: 1 1 50%;
-}
-
-.explore__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../../assets/img/explore-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .btn {
   font-size: 2.2rem;
   line-height: 2.6rem;
@@ -786,6 +812,104 @@ h3 {
   letter-spacing: 2px;
   color: #fff;
   background-color: #710707;
+}
+
+.tickets__booking-tickets {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 50px;
+  color: #fff;
+}
+
+.tickets__type-ticket {
+  margin: 0 180px 0 0;
+}
+
+.tickets__subtitle {
+  margin: 0 0 25px 0;
+  font-size: 2.5rem;
+  line-height: 3.1rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.tickets__subtitle_r {
+  text-align: right;
+}
+
+.tickets__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets__item {
+  margin: 25px 0;
+}
+
+.tickets__item-amount {
+  display: block;
+  margin: 0 0 25px 0;
+}
+
+.tickets__label {
+  display: inline-block;
+  padding: 0 0 10px 0;
+}
+
+.tickets__btn-group {
+  display: flex;
+  height: 50px;
+}
+
+.tickets__button {
+  width: 46px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 2.8rem;
+  background-color: #030303;
+  outline: none;
+}
+
+.tickets__button_l {
+  border-left: 1px solid #fff;
+}
+
+.tickets__button_r {
+  border-right: 1px solid #fff;
+}
+
+.tickets__area {
+  max-width: 58px;
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background-color: #030303;
+  text-align: center;
+}
+.tickets__area:focus {
+  outline: none;
+}
+
+.tickets__total {
+  margin: 0 0 50px 0;
+  font-size: 2.5rem;
+  line-height: 3.1rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1.65px;
+}
+
+.tickets__btn {
+  padding: 10px 35px;
+  border-radius: 2px;
+  color: #000;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
