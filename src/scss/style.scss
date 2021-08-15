@@ -1,10 +1,10 @@
-//Vendors
-@import "./vendors/normalize";
-
 //Abstracts
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/placeholders";
+
+//Vendors
+@import "./vendors/normalize";
 
 //Base
 @import "./base/resets";
@@ -13,13 +13,16 @@
 //Layouts
 @import "./layouts/wrapper";
 @import "./layouts/header";
+@import "./layouts/welcome";
 @import "./layouts/visiting";
+@import "./layouts/explore";
+@import "./layouts/video";
+@import "./layouts/tickets";
 
 //Components
 @import "./components/logo";
 @import "./components/navigation";
-@import "./components/welcome";
-@import "./components/video";
+@import "./components/underscore";
 @import "./components/video-player";
-@import "./components/explore";
-@import "./components/buttons";
+@import "./components/button";
+@import "./components/form";

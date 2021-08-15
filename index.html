@@ -37,7 +37,7 @@
       <div class="welcome__background"></div>
       <div class="wrapper">
         <div class="welcome__column">
-          <h1 class="welcome__title title_dash">Welcome <br> to the louvre</h1>
+          <h1 class="welcome__title title_underscore">Welcome <br> to the louvre</h1>
           <p class="welcome__article">From the castle to the museum</p>
           <a href="#" class="welcome__btn btn">Discover the Louvre</a>
         </div>
@@ -46,7 +46,7 @@
     <!-- /.welcome -->
     <section class="visiting">
       <div class="wrapper">
-        <h2 class="visiting__title title_dash">Virtual tour</h2>
+        <h2 class="visiting__title title_underscore">Virtual tour</h2>
         <div class="visiting__tours">
           <ul class="visiting__list tours-list">
             <li class="tours-list__item">
@@ -117,7 +117,7 @@
     <section class="explore">
       <div class="wrapper explore__wrapper">
         <div class="explore__content">
-          <h2 class="explore__title title_dash">Picture explore</h2>
+          <h2 class="explore__title title_underscore">Picture explore</h2>
           <p class="explore__article article">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
             the
             Spanish Golden Age.</p>
@@ -136,7 +136,6 @@
     </section>
     <!-- /.explore -->
     <section class="video">
-      <!-- TODO доработать плеер -->
       <div class="wrapper">
         <div class="video__video-player video-player">
           <div class="video-player__video-container">
@@ -167,43 +166,61 @@
     </section>
     <!-- /.video -->
     <section class="tickets">
-      <h2 class="tickets__title title_dash">Buy tickets</h2>
-      <div class="tickets__row">
-        <div class="tickets__img" style="background-image: url('assets/img/tickets-bg.jpg')"></div>
-        <div class="tickets__booking-tickets">
-          <div class="tickets__type-ticket">
-            <h3 class="tickets__subtitle">Ticket type</h3>
-            <div class="tickets__column">
-              <input id="ticket-type1" type="radio" value="Permanent exhibition" name="tickets-type">
-              <label for="ticket-type1">Permanent exhibition</label>
-              <input id="ticket-type2" type="radio" value="Temporary exhibition" name="tickets-type">
-              <label for="ticket-type2">Temporary exhibition</label>
-              <input id="ticket-type3" type="radio" value="Combined Admission" name="tickets-type">
-              <label for="ticket-type3">Combined Admission</label>
-            </div>
+      <div class="wrapper">
+        <h2 class="tickets__title title_underscore">Buy tickets</h2>
+        <div class="tickets__row">
+          <div class="tickets__img-container">
+            <div class="tickets__img"></div>
           </div>
-          <div class="tickets__amount">
-            <h3 class="tickets__subtitle">Amount</h3>
-            <div class="tickets__column">
-              <button class="tickets__button" type="button">-</button>
-              <input id="amount-basic" type="number">
-              <button class="tickets__button" type="button">+</button>
-              <label for="amount-basic">Basic 18+</label>
-              <button class="tickets__button" type="button">-</button>
-              <input id="amount-senior" type="number">
-              <button class="tickets__button" type="button">+</button>
-              <label for="amount-senior">Senior 65+</label>
+          <form class="tickets__tickets-form form-tickets">
+            <div class="form-tickets__type-ticket">
+              <div class="form-tickets__subtitle">Ticket Type</div>
+              <ul class="form-tickets__column">
+                <li class="form-tickets__item">
+                  <input id="ticket-type1" type="radio" value="Permanent exhibition" name="tickets-type">
+                  <label class="form-tickets__radio-label" for="ticket-type1">Permanent exhibition</label>
+                </li>
+                <li class="form-tickets__item">
+                  <input id="ticket-type2" type="radio" value="Temporary exhibition" name="tickets-type">
+                  <label class="form-tickets__radio-label" for="ticket-type2">Temporary exhibition</label>
+                </li>
+                <li class="form-tickets__item">
+                  <input id="ticket-type3" type="radio" value="Combined Admission" name="tickets-type">
+                  <label class="form-tickets__radio-label" for="ticket-type3">Combined Admission</label>
+                </li>
+              </ul>
             </div>
-            <span class="tickets__total">Total €220</span>
-            <a href="#">Buy Now</a>
-          </div>
+            <div class="form-tickets__amount">
+              <div class="form-tickets__subtitle form-tickets__subtitle_r">Amount</div>
+              <ul class="form-tickets__column-amount">
+                <li class="form-tickets__item-amount">
+                  <label class="form-tickets__label" for="amount-basic">Basic 18+</label>
+                  <div class="form-tickets__count-group">
+                    <button class="form-tickets__count-button" type="button">-</button>
+                    <input class="form-tickets__area" id="amount-basic" type="number">
+                    <button class="form-tickets__count-button" type="button">+</button>
+                  </div>
+                </li>
+                <li class="form-tickets__item-amount">
+                  <label class="form-tickets__label" for="amount-senior">Senior 65+</label>
+                  <div class="form-tickets__count-group">
+                    <button class="form-tickets__count-button" type="button">-</button>
+                    <input class="form-tickets__area" id="amount-senior" type="number">
+                    <button class="form-tickets__count-button" type="button">+</button>
+                  </div>
+                </li>
+              </ul>
+              <div class="form-tickets__total">Total €220</div>
+              <a class="form-tickets__btn" href="#">Buy Now</a>
+            </div>
+          </form>
         </div>
       </div>
     </section>
     <!-- /.tickets -->
     <section class="contacts">
       <div class="wrapper">
-        <h2 class="contacts__title title_dash">Contacts</h2>
+        <h2 class="contacts__title title_underscore">Contacts</h2>
         <div class="contacts__content">
           <h3 class="contacts__subtitle">Palais Royal</h3>
           <h3 class="contacts__subtitle">Musee du Louvre</h3>

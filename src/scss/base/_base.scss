@@ -20,6 +20,9 @@ h1 {
 h2 {
   @include font(8rem, 9rem);
   @extend %font-add;
+  color: $color-light;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 h3 {
