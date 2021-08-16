@@ -10,7 +10,7 @@
 
 .form-tickets__subtitle {
   margin: 0 0 29px 0;
-  @include font(2.5rem, 3.1rem, bold);
+  @include font(2.5rem, 3.1rem, 700);
   letter-spacing: 2px;
   &_r {
     margin: 0 0 14px 0;
@@ -68,7 +68,7 @@
 
 .form-tickets__total {
   margin: 0 0 65px 0;
-  @include font(2.5rem, 3.1rem, bold);
+  @include font(2.5rem, 3.1rem, 700);
   letter-spacing: 3.3px;
 }
 
